@@ -1,0 +1,48 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    margin: 0 55px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------HEADER---------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header nav a {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 48px;
+    border-top: 2px solid transparent;
+}
+
+header nav a:hover {
+    font-weight: 500;
+    color: #0065FC;
+    border-color: #0065FC;
+}
+
+/* ----------------------MAIN---------------------- */
+
+
+
