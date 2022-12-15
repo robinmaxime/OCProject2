@@ -13,13 +13,13 @@ a {
 
 /* ----------------------HEADER---------------------- */
 
-header {
+.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul {
+.page-header__nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -28,7 +28,7 @@ header nav ul {
 }
 
 
-header nav a {
+.page-header__nav ul a {
     display: block;
     font-weight: 400;
     font-size: 16px;
@@ -36,7 +36,7 @@ header nav a {
     border-top: 2px solid transparent;
 }
 
-header nav a:hover {
+.page-header__nav ul a:hover {
     font-weight: 500;
     color: #0065FC;
     border-color: #0065FC;
