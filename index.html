@@ -21,18 +21,53 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="main">
+        <section class="main__search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form method="get" action="" class="main__search__form">
+                <label for="city" class="main__search__form__label"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" name="city" id="city" placeholder="Marseille, France" size="20" class="main__search__form__city">
+                <button class="main__search__form__button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Rechercher</span>
+                </button>
+            </form>
+            <div class="main__search__filter">
+                <span>Filtres</span>
+                <a href="">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <span>Économique</span>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-person"></i>
+                    <span>Familial</span>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Romantique</span>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-dog"></i>
+                    <span>Animaux autorisés</span>
+                </a>
+            </div>
+            <div class="main__search__info">
+                <i class="fa-solid fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+        <section class="main__accommodation">
 
         </section>
-        <section>
+        <aside class="main__popular">
 
-        </section>
-        <section>
+        </aside>
+        <section class="main__activity">
 
         </section>
     </main>
-    <footer>
+    <footer class="page-footer">
 
     </footer>
     
