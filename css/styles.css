@@ -16,22 +16,123 @@ a {
 }
 
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 700;
     font-size: 22px;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+figure,
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ----------------------CARD---------------------- */
+
+
+.card {
+    display: flex;
+    margin: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card--accommodation {
+    width: calc(100% / 3 - 35px)
+}
+
+.card--activity {
+    padding: 0px;
+    flex: 1 1 0px;
+}
+
+.card__figure{
+    display: flex;
+}
+
+.card__figure--column {
+    flex-direction: column;
+}
+
+.card__image {
+    object-fit: cover;
+}
+
+.card__image--top {
+    height: 160px;
+    width: 100%;
+    border-radius: 17px 17px 0 0;
+}
+
+.card__image--left {
+    height: 100%;
+    width: 137px;
+    border-radius: 17px 0 0 17px;
+}
+
+.card__image--activity{
+    height: 389px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__caption {
+    padding: 9px 16px; 
+}
+
+.card__caption--activity {
+    padding: 20px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 14px;
+    padding: 0;
+}
+
+.card__stars {
+    display: flex;
+}
+
+.card__star{
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.card__star--inactive {
+    color: #D9D9D9;
+}
+
+
+
 
 /* ----------------------HEADER---------------------- */
 
-.page-header {
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.header__logo {
+    width: 61px;
+    height: 19px;
+}
 
-.page-header__nav ul {
+.header__menu {
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -40,14 +141,13 @@ h1, h2 {
 }
 
 
-.page-header__nav ul a {
+.header__link {
     display: block;
     padding: 48px;
     border-top: 2px solid transparent;
 }
 
-
-.page-header__nav ul a:hover {
+.header__link:hover {
     font-weight: 500;
     color: #0065FC;
     border-color: #0065FC;
@@ -56,60 +156,63 @@ h1, h2 {
 
 /* ----------------------MAIN---------------------- */
 
-/* ----------------------MAIN SEARCH--------------- */
 
-.main__search p {
-    margin-top: 5px;
+/* ----------------------SEARCH--------------- */
+
+
+/* SEARCH - TITLE */
+
+
+.search {
+    margin-bottom: 30px;
 }
 
-
-.main__search h1 {
+.search__title {
     margin-bottom: 5px;
 }
 
 
-.main__search__form {
+/* SEARCH - FORM */
+
+
+.search__form {
     display: flex;
     font-size: 18px;
     height: 49px;
+    margin: 20px 0;
 }
 
-
-.main__search__form__label{
+.search__fieldlabel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #F2F2F2;
     border-radius: 15px 0 0 15px;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
 }
 
-
-.main__search__form input, .main__search__form button {
+.search__field,
+.search__button {
     font-size: 18px;
     font-weight: 700;
 }
 
-
-.main__search__form__city {
-    border: 1px solid #D9D9D9;
+.search__field {
+    border: 1px solid #F2F2F2;
     border-right: none;
     padding-left: 17px;
 }
 
-
-.main__search__form__city:focus{
+.search__field:focus {
     outline: none;
 }
 
-
-::placeholder {
+.search__field::placeholder {
     color: black;
 }
 
-
-.main__search__form__button {
+.search__button {
     display: flex;
     gap: 10px;
     background-color: #0065FC;
@@ -117,22 +220,30 @@ h1, h2 {
     border-radius: 0 15px 15px 0;
     border: 1px solid #0065FC;
     padding: 14px 16px;
+    cursor: pointer;
 }
 
-
-.main__search__form__button i {
+.search__button i {
     display: none;
 }
 
-.main__search__filter {
+
+/* SEARCH - FILTER */
+
+
+.search__filter {
     display: flex;
     align-items: center;
     gap: 50px;
     margin: 30px 0;
 }
 
+.search__label {
+    font-size: 18px;
+    font-weight: 700;
+}
 
-.main__search__filter a {
+.search__capsule {
     display: flex;
     gap: 10px;
     border: 1px solid #D9D9D9;
@@ -140,62 +251,134 @@ h1, h2 {
     padding: 10px 20px;
 }
 
-
-.main__search__filter a:hover {
+.search__capsule:hover {
     background-color: #DEEBFF;
 }
 
-
-.main__search__filter a span {
+.search__capsule span {
     font-size: 17px;
     font-weight: 700;
 }
 
-
-.main__search__filter span:first-child {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.main__search__filter i {
+.search__capsule i {
     color: #0065FC;
 }
 
 
-.main__search__info {
+/* SEARCH - INFO */
+
+
+.search__info {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.main__search__info p {
-    margin: 0;
-    padding: 0;
-}
-
-
-.main__search__info i {
+.search__info i {
     font-size: 13px;
     display: flex;
-    color: #0065FC;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
+    color: #0065FC;
 }
 
 
-/* ----------------------MAIN ACCOMMODATION-------- */
+/* ----------------------CONTAINER (ACCOMMODATION + POPULAR)--------------- */
+
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* ACCOMMODATION + POPULAR */
+
+
+.accommodation,
+.popular {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.accommodation__title,
+.popular__title {
+    margin-bottom: 23px;
+}
+
+
+/* ACCOMMODATION */
+
+
+.accommodation {
+    padding: 42px 40px;
+    width: 64%;
+}
+
+.accommodation__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.accommodation__showmore {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 40px 0 4px 4px;
+}
+
+
+/* POPULAR */
+
+
+.popular {
+    padding: 41px 40px 34px 37px;
+    width: 31%;
+}
+
+.popular__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular__title-icon {
+    color: #0065FC;
+}
+
+.popular__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+
+/* ---------------------- ACTIVITY------------- */
+
+.activity {
+    margin: 60px 0px;
+}
+
+.activity__title {
+    margin-bottom: 18px;
+}
+
+.activity__cards {
+    display: flex;
+    gap: 43px;
+}
 
 
 
 
-/* ----------------------MAIN POPULAR-------------- */
 
-
-/* ----------------------MAIN ACTIVITY------------- */
 
 
 /* ----------------------FOOTER-------------------- */
