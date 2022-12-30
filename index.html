@@ -15,7 +15,7 @@
     <div class="page-container">
 
         <header class="header">
-            <img class="header__logo" src="/images/logo/Booki.png" alt="logo Booki">
+            <img class="header__logo" src="/images/logo/Booki.png" srcset="/images/logo/Booki@3x.png 3x" alt="logo Booki">
             <nav>
                 <ul class="header__menu">
                     <li><a class="header__link" href="#accommodation">Hébergements</a></li>
@@ -33,32 +33,34 @@
                 <p class="search__subtitle">En plein centre-ville ou en pleine nature</p>
 
                 <form class="search__form" method="get" action="">
-                    <label class="search__fieldlabel" for="city"><i class="fa-solid fa-location-dot"></i></label>
-                    <input class="search__field" type="text" name="city" id="city" placeholder="Marseille, France" size="20">
-                    <button class="search__button" type="submit">
+                    <label class="form__label" for="city"><i class="fa-solid fa-location-dot"></i></label>
+                    <input class="form__field" type="text" name="city" id="city" placeholder="Marseille, France" size="1">
+                    <button class="form__button" type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span >Rechercher</span>
                     </button>
                 </form>
 
                 <div class="search__filter">
-                    <div class="search__label">Filtres</div>
-                    <a class="search__capsule" href="#">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span>Économique</span>
-                    </a>
-                    <a class="search__capsule" href="#">
-                        <i class="fa-solid fa-person"></i>
-                        <span>Familial</span>
-                    </a>
-                    <a class="search__capsule" href="#">
-                        <i class="fa-solid fa-heart"></i>
-                        <span>Romantique</span>
-                    </a>
-                    <a class="search__capsule" href="#">
-                        <i class="fa-solid fa-dog"></i>
-                        <span>Animaux autorisés</span>
-                    </a>
+                    <div class="filter__label">Filtres</div>
+                    <div class="filter__capsules">
+                        <a class="filter__capsule" href="#">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </a>
+                        <a class="filter__capsule" href="#">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </a>
+                        <a class="filter__capsule" href="#">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </a>
+                        <a class="filter__capsule" href="#">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="search__info">
@@ -252,7 +254,7 @@
                 <div class="activity__cards">
                     <a href="#">
                         <article class="card card--activity">
-                            <img class="card__image card__image--activity" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du Vieux-Port de Marseille">
+                            <img class="card__image card__image--activity" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" srcset="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x" alt="photo du Vieux-Port de Marseille">
                             <div class="card__caption card__caption--activity">
                                 <h3>Vieux-Port</h3>
                             </div>
@@ -260,7 +262,7 @@
                     </a>
                     <a href="#">
                         <article class="card card--activity">
-                            <img class="card__image card__image--activity" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du Fort de Pomègues">
+                            <img class="card__image card__image--activity" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" srcset="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x" alt="photo du Fort de Pomègues">
                             <div class="card__caption card__caption--activity">
                                 <h3>Fort de Pomègues</h3>
                             </div>
@@ -268,7 +270,7 @@
                     </a>
                     <a href="#">
                         <article class="card card--activity">
-                            <img class="card__image card__image--activity" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du Parc national des Calanques">
+                            <img class="card__image card__image--activity" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" srcset="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x" alt="photo du Parc national des Calanques">
                             <div class="card__caption card__caption--activity">
                                 <h3>Parc national des Calanques</h3>
                             </div>
@@ -276,7 +278,7 @@
                     </a>
                     <a href="#">
                     <article class="card card--activity">
-                        <img class="card__image card__image--activity" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de Notre-Dame-de-la-Garde">
+                        <img class="card__image card__image--activity" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" srcset="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x" alt="photo de Notre-Dame-de-la-Garde">
                         <div class="card__caption card__caption--activity">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </div>
